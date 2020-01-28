@@ -16,7 +16,7 @@ API基于[DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawl
 
 ### 使用方法
 
-1. 打开main.py    修改SCKEY为自己的SCKEY
+1. 打开main.py    修改SCKEY为自己的SCKEY（可使用多个SCKEY，用","隔开）
 
    ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/SCKEY.png)
 
