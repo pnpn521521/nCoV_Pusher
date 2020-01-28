@@ -18,11 +18,11 @@ API基于[DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawl
 
 1. 打开main.py    修改SCKEY为自己的SCKEY
 
-   ![https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/SCKEY.png]()
+   ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/SCKEY.png)
 
 2. 修改mian函数下的    provinceName变量为自己的省份
 
-   ![https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/change_to_your_province.png]()
+   ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/change_to_your_province.png)
 
 3. python main.py
 
@@ -30,4 +30,4 @@ API基于[DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawl
 
 ### 效果
 
-![https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/received.png]()
+![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/received.png)
