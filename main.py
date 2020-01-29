@@ -27,7 +27,7 @@ def updateTime_set(new_updateTime):
 def area(latest = 1, province = '辽宁省'):
     latest = str(latest)
     province = parse.quote(province)
-    url = 'http://lab.isaaclin.cn/nCoV/api/area?latest='+latest+'&province='+province
+    url = 'https://lab.isaaclin.cn/nCoV/api/area?latest='+latest+'&province='+province
     response = urllib.request.urlopen(url)
     page = response.read()
     msg = json.loads(page)
