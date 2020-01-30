@@ -20,9 +20,9 @@ API基于[DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawl
 
    ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/SCKEY.png)
 
-2. 修改mian函数下的    provinceName变量为自己的省份
+2. 修改provinceName变量为自己的省份
 
-   ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/change_to_your_province.png)
+   ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/new_change_to_your_province.png)
 
 3. python main.py
 
@@ -30,7 +30,7 @@ API基于[DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawl
 
 ### 效果
 
-![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/received.png)
+![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/received_msg.png)
 
 
 
