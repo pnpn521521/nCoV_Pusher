@@ -22,7 +22,7 @@ API基于[DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawl
 
 2. 修改provinceName变量为自己的省份
 
-   ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/new_change_to_your_province.png)
+   ![image](https://raw.githubusercontent.com/pnpn521521/nCoV_Pusher/master/img/province.png)
 
 3. python main.py
 
