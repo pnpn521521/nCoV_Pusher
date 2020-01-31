@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
 plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
 
-SCKEY = ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"]
+SCKEY = ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+         "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"]
 
 provinceName = '湖北省'
 
@@ -36,13 +37,13 @@ def provinceplot(latest = 0, province = '辽宁省'):
     page = response.read()
     msg = json.loads(page)
 
-    times = [time.strftime("%m-%d", time.localtime(msg['results'][0]['updateTime']/1000))]
-    confirmedCount = [msg['results'][0]['confirmedCount']]
-    suspectedCount = [msg['results'][0]['suspectedCount']]
-    curedCount = [msg['results'][0]['curedCount']]
-    deadCount = [msg['results'][0]['deadCount']]
+    times = [time.strftime("%m-%d", time.localtime(msg['results'][-1]['updateTime']/1000))]
+    confirmedCount = [msg['results'][-1]['confirmedCount']]
+    suspectedCount = [msg['results'][-1]['suspectedCount']]
+    curedCount = [msg['results'][-1]['curedCount']]
+    deadCount = [msg['results'][-1]['deadCount']]
     #ploslist = [times, confirmedCount, suspectedCount, curedCount, deadCount]
-    for i in msg['results']:
+    for i in reversed(msg['results']):
         t = time.strftime("%m-%d", time.localtime(i['updateTime']/1000))
         if t == times[-1]:
             confirmedCount[-1] = i['confirmedCount']
@@ -58,7 +59,9 @@ def provinceplot(latest = 0, province = '辽宁省'):
 
     plt.figure()
     plt.plot(times,confirmedCount)
-    plt.title(province+'疫情确诊趋势图')
+    plt.title(province+'疫情确诊趋势图',fontsize = 18)
+    for x,y in zip(times,confirmedCount):
+        plt.text(x,y + 0.5,'%.0f' %y,ha = 'center',fontsize = 10 )
     plt.savefig('province.png')
 
     return
